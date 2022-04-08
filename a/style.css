@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'oswald-regular';
+    src: url('fonts/Oswald-Regular.ttf');
+}
+@font-face {
+    font-family: 'oswald-semibold';
+    src: url('fonts/Oswald-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'oswald-bold';
+    src: url('fonts/Oswald-Bold.ttf');
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: crimson;
+    padding: 15px 0;
+}
+
+header .header_top,
+header .header_top nav ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+header .header_top img.logo {
+    height: 60px;
+}
+
+header .header_top nav ul li {
+    margin-left: 50px;
+}
+
+header .header_top nav ul li a {
+    text-decoration: none;
+    font-family: 'oswald-regular';
+    color: #fff;
+    text-transform: uppercase;
+    font-size: large;
+    font-size: 18px;
+}
+
+header .header_top nav ul li a:hover ,
+header .header_top nav ul li a.active{
+    color: #000;
+}
+
+/*  here bolimi */ 
+.hero_section {
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-image: url('images/here.png');
+    margin-top: 90px;
+    background-size: cover;
+}
+
+.hero_section .hero_title {
+    padding-top: 210px;
+    font-family: 'oswald-regular';
+    color: #fff;
+    font-size: 85px;
+    font-weight: 400;
+}
+.hero_section .hero_description {
+    padding-top: 15px;
+    color: #fff;
+    font-family: 'montserrat';
+    font-size: 25px;
+    width: 50% ;
+}
+
+.hero_section .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+    font-family: 'oswald-regular';
+    text-decoration: none;
+}
+.hero_section .cta:hover {
+    color: white;
+    background-color: crimson;
+}
